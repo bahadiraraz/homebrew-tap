@@ -2,25 +2,25 @@ class Portman < Formula
   desc "Interactive TUI tool to manage and monitor dev server ports"
   homepage "https://github.com/bahadiraraz/portman"
   license "MIT"
-  version "0.2.2"
+  version "0.2.3"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/bahadiraraz/portman/releases/download/v#{version}/portman-aarch64-apple-darwin.tar.gz"
-      sha256 "69fe7faceef130f13f5a0be98b951356e036b405acd18196ced5898c6e1e670b"
+      sha256 "0c374a45a23e43260daa3c0d23381f1c8fcadb5a3df04fbf03f234916eeaf362"
     else
       url "https://github.com/bahadiraraz/portman/releases/download/v#{version}/portman-x86_64-apple-darwin.tar.gz"
-      sha256 "9edbff9e032fb570bb40e9140d1243efb813574dbf0345a06c2a6c566beb5836"
+      sha256 "21237eac496604f44f3c6ee5708573def0d159422d4b7551afb9a154edb69278"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/bahadiraraz/portman/releases/download/v#{version}/portman-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e7aa5546763b3790adfd1f070b7a048009cc6b3ef4b893f423a45fc51a165719"
+      sha256 "331ffb89eda1a423d4bae5a0dbd34bd60cf95a68e785b61e2e6c742eb0e25fa2"
     else
       url "https://github.com/bahadiraraz/portman/releases/download/v#{version}/portman-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d2e8075e4eaf3262138e950f73355b282e095e708f9384c42f5e55ecedb2b437"
+      sha256 "bbc52ed6767c4a2a933096800e9f66c8af83a183f87cc0ef2f9e8911abab424a"
     end
   end
 
