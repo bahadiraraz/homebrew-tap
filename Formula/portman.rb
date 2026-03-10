@@ -2,7 +2,7 @@ class Portman < Formula
   desc "Interactive TUI tool to manage and monitor dev server ports"
   homepage "https://github.com/bahadiraraz/portman"
   license "MIT"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.arm?
